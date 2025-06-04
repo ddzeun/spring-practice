@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="member" class="com.zeun.common.MemberDTO">
+<!--        다양한 방법으로 작성했지만 한 가지로 통일하는 것이 좋음     -->
+        <constructor-arg name="name" value="지은" />
+        <constructor-arg index="1"><value>48329</value></constructor-arg>
+    </bean>
+</beans>
